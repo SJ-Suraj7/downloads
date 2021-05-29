@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+:root {
+    --primary-color: rgb(231, 44, 44);
+}
+body {
+    background: whitesmoke;
+    margin: 0;
+    
+}
+
+.navbar {
+    background: whitesmoke;
+    padding: 1em;
+    height:2em;
+    
+    
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--primary-color);
+        font-size: 1.2em;
+    }
+
+    
+
+    nav {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        width: 66%;
+        right: 0;
+        top: 0;
+        background: #20272e;
+        height: 100vh;
+        padding:1em;
+
+        .primary {
+            list-style-type: none;
+            padding: 1.2em;
+            margin-top: 1em;
+
+
+
+
+        }
+
+        li{
+            a{
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 0.5em;
+                text-align: right;
+                font-size: 1.3em;
+                margin-top: .4em;
+
+                &:hover{
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+    .container {
+        place-content: space-between;
+        display: flex;
+    }
+    
+    
+
+    
+    // }
+    // .mobile-exit{
+    //     float: right;
+    //     margin: .5em;
+    //     cursor: pointer;
+    //     //display: block;
+    // }
+
+    laal{
+        background-color: var(--primary-color); /* Green */
+        border: none;
+        color: white;
+        padding: 8px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 40%;
+        border-radius: 0.3em;
+    }
+
+    
+   
+    
+    
+    
+}
+nav.menu {
+    cursor: pointer;
+    display: block;
+}    
+.mobile-exit{
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+    //display: block;
+}
+
+section.hero {
+    margin-top: -1.3em;
+    background: rgb(165, 196, 226);
+    width: 100%;
+    padding-top: .1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    
+
+    .raju{
+        text-transform: uppercase;
+        font-family: "Ubuntu";
+        letter-spacing: 0.1em;
+        margin-top: .4em;
+        font-size: 15px;
+    }
+
+    .babu{
+        //letter-spacing:;
+        margin-top: -.1em;
+        padding-top: -4em;
+        font-size: 25px;
+        font-family: 'Merriweather Sans';
+
+    }
+
+    .course {
+        font-family: "Overpass";
+        font-size: 12px;
+
+    }
+
+    
+    
+    .right-col{
+        width: 60%;
+        margin-left: 2.1em;
+        border: 40px solid rgb(231, 44, 44);
+        padding: 1em;
+        margin-top: 4px;
+        background: white;
+        text-align: center;
+
+        input[type= text], input[type= email]{
+            border: none;
+            border-bottom: 1px solid black;
+            background-color:rgb(192, 236, 236) ;
+            width: 90%;
+            margin: 5px;
+            padding: 7px;
+
+        }
+
+        .p1{
+            font-size: 10px;
+            margin-left: -4em;
+        }
+        .button1{
+            background-color: var(--primary-color); /* Green */
+            border: none;
+            color: white;
+            padding: 8px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            width: 90%;
+            border-radius: 0.3em;
+
+        }
+
+        
+        
+        
+        
+        
+    }   
+
+    
+
+    //td {
+        //padding:0 3em;
+        //margin-right: 2em;
+    //}
+
+    
+
+    .pargraph{
+        width: 80%;
+        font-family: "Overpass";
+        font-weight: bold;
+        font-size: 10px;
+
+
+        
+
+    }
+    .time1 {
+        font-family: "Signika Negative";
+        
+        color: var(--primary-color);
+        
+        
+    }
+    .time2 {
+        font-family: "Signika Negative";
+        padding-top: 0;
+        line-height: 0em;
+        margin-bottom: 2em;
+        
+        color: var(--primary-color);
+       
+        
+    }
+
+
+    
+
+}
+
+.trainer{
+    h1{
+        color: var(--primary-color);
+        text-align: center;
+        font-size: 35px;
+        margin-top: .2em;
+    }
+    /* Three columns side by side */
+    .column {
+        float: left;
+        width: 100%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+    
+    /* Display the columns below each other instead of side by side on small screens */
+    @media screen and (min-width: 665px) {
+        .column {
+        width: 50%;
+        
+        
+        }
+
+        .row {
+            display: flex;
+            width:70%;
+            margin-right: auto;
+            margin-left: auto;
+            //display: block;
+        }
+        
+    }
+    
+    /* Add some shadows to create a card effect */
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    // /* Some left and right padding inside the container */
+    .container {
+        padding:0 0;
+    }
+    
+    // /* Clear floats */
+    .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .title {
+        color: grey;
+        text-align: center;
+    }
+    .alignm{
+        text-align: center ;
+
+    }
+    .para {
+        width: 15em;
+        //text-overflow: inherit;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        
+    }
+
+    .img1 {
+        width: 45%;
+        height: 45%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        
+    }
+  
+
+}
+
+.dusra{
+    color: var(--primary-color);
+    text-align: center;
+    font-family: 'Merriweather Sans';
+    font-weight: bold;
+}
+
+section.ciriculam{
+    .dusra{
+        color: var(--primary-color);
+        text-align: center;
+        font-family: 'Merriweather Sans';
+        font-weight: bold;
+    }
+
+    tr{
+       font-family: "Open Sans";
+       text-align: center;
+    
+
+       td{
+           text-align: center;
+       }
+    }
+
+    .column{
+        //flex: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .row{
+        display: inline-block;
+        margin-left: 6em;
+        margin-right: auto;
+        //margin-bottom: 5em;
+        
+
+    }
+    .table{
+        // border-right: .9px solid gray;
+        //padding-right: 5em;
+        padding-bottom: 3em;
+
+    }
+
+    
+    @media screen and (min-width:768px){
+        .table{
+            padding-right: 8em;
+            padding-left: -1em;;
+            text-align: center;
+            border-right: .9px solid gray;
+        }
+        .row{
+            display:flex;
+
+        }
+        .table1{
+            padding-left: 3em;
+            margin-right: 3em;
+        }
+    }
+    
+
+    
+}
+
+section.curriculum1{
+    .date1{
+        
+         /* Green */
+        border: none;
+        color: skyblue;
+        padding: 8px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: flexbox;
+        margin-left: 3em;
+        margin-right: 1.5em;
+        
+        font-size: 16px;
+        width: 40%;
+        border-radius: 0.3em;
+
+        &:hover{
+            background-color: var(--primary-color);
+            color: white;
+
+            
+
+        }
+
+        
+        
+
+
+
+
+    }
+    .date2{
+         /* Green */
+        border: none;
+        color:skyblue;
+        padding: 8px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: flexbox;
+        margin-left: 1.5em;
+        margin-right: 3em;
+        
+        font-size: 16px;
+        width: 40%;
+        border-radius: 0.3em;
+
+        &:hover{
+            background-color: var(--primary-color);
+        }
+
+    }
+
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 1em;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin-top: 2em;
+    }
+    
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+    
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    }
+
+    .accordion:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 10px;
+        color: #777;
+        float: left;
+        margin-left: -1em;
+        margin-right: 0.5em;
+    }
+      
+      .active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+    .laal2{
+        background-color: var(--primary-color); /* Green */
+        border: none;
+        color: white;
+        padding: 8px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 40%;
+        border-radius: 0.3em;
+        margin-left: 9em;
+        margin-right: 3em;
+        margin-top: .5em;
+
+    }
+
+    @media  screen and (min-width:600px) {
+        .date1 .date2{
+           
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            justify-content: space-between;
+        }
+
+        
+        
+        .laal2{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: .8em;
+            display: block;
+            width: 10%;
+
+        }
+        
+    }
+
+
+
+        
+}
+
+section.venue{
+    .hotel{
+        width: 0%;
+    }
+}
+
+
+@media only screen and (min-width:600px){
+    .menu {
+        display:none;
+    }
+    .mobile-exit {
+        display: none;
+    }
+    
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto ;
+        place-content: .5em;
+        max-height: 1em;
+        
+    }
+
+    .navbar nav{
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height:2em ;
+        width: 100%;
+        padding: 0;
+        margin-right: 2em;
+
+        
+
+        ul{
+            display: flex;
+            
+
+        }
+        .a{
+            color: black;
+            font-size:1em;
+            padding: .1em 1em;
+            margin-left: auto;
+            margin-right:auto;
+
+        }
+
+        ul.primary{
+            margin: -2em;
+            padding-bottom: 1em;
+            margin-left: 5em;
+        }
+
+        .laal{
+            background-color: var(--primary-color); /* Green */
+            border: none;
+            color: white;
+            padding: 7px 9a1px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            font-size: 14px;
+            width: 95%;
+            border-radius: 0.3em;
+            
+        }
+    }
+
+
+    
+}
+    
+// faq_list.accordions{
+    
+//     background-color: #eee;
+//     color: #444;
+//     cursor: pointer;
+//     padding: 18px;
+//     width: 100%;
+//     text-align: left;
+//     border: none;
+//     outline: none;
+//     transition: 0.4s;
+//     }
+    
+//     /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+//     .active, .accordions:hover {
+//     background-color: #ccc;
+//     }
+    
+//     /* Style the accordion panel. Note: hidden by default */
+//     .panel {
+//     padding: 0 18px;
+//     background-color: white;
+//     display: none;
+//     overflow: hidden;
+//     }
+
+@media screen and (min-width:1080px) {
+    // .container{
+    //     width: 1080px;
+    //     margin: 0 auto;
+    // }
+    
+    // section{
+    //     padding: 10em 4em;
+    // }
+
+    .hero .container{
+        display:flex;
+        justify-content: space-between;
+        margin-right: 4em;
+    
+        .paragraph{
+            width:45%;
+
+        }
+        .right-col{
+            padding: 2em;
+            border: 50px solid var(--primary-color);
+            width:90%;
+            margin-top: 1.2em;
+
+        }
+
+    }
+}
+
+
+.section3{
+    .alternate{
+        background: var(--primary-color);
+        height: 250px;
+
+        h1{
+            text-align: center;
+            //font-weight: ;
+            color: white;
+            font-family: 'Noto Sans JP';
+            font-size: 1.3em;
+            padding-top: .6em;
+            font-size: 2em;
+
+        }
+
+        p{
+            color: white;
+            font-family: 'Overpass';
+            text-align: center;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: bold;
+            padding-top: .1em;
+            font-size: .7em;
+            margin-top: -.8em;
+        }
+
+        input[type= search]{
+            
+            display: block;
+            margin-top: 2em;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            padding: 1.2em;
+
+        }
+    }
+}
+    
+.section5{
+
+    
+    
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 1em;
+        width: 30%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin-top: 2em;
+        
+        
+    }
+    
+    
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+    
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    }
+
+    .accordion:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 10px;
+        color: #777;
+        float: left;
+        margin-left: -1em;
+        margin-right: 0.5em;
+    }
+      
+    .active:after {
+        content: "\2796"; 
+
+    }
+
+
+}
+
+section.faq_list{
+    h1{
+        font-family: 'Merriweather Sans';
+        font-size: bold;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: var(--primary-color);
+        
+    }
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 1em;
+        width: 90%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin-top: 2em;
+    }
+
+
+    
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+    
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    }
+
+    .accordion:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 10px;
+        color: #777;
+        float: left;
+        margin-left: -1em;
+        margin-right: 0.5em;
+    }
+      
+      .active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+
+}
